@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Ahmed Dahmash | Portfolio & Technical Archive</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Architectural Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        arch: {
+                            dark: '#111111',
+                            muted: '#1A1A1A',
+                            accent: '#C5A880', /* Premium Warm Gold Accent */
+                            light: '#F9F9F9',
+                            slate: '#666666'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-arch-light text-arch-dark font-sans selection:bg-arch-accent selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-widest text-arch-dark">
+                AHMED <span class="text-arch-accent font-light">DAHMASH</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest">
+                <a href="#profile" class="hover:text-arch-accent transition">Profile</a>
+                <a href="#capabilities" class="hover:text-arch-accent transition">Capabilities</a>
+                <a href="#projects" class="hover:text-arch-accent transition">Selected Works</a>
+                <a href="#contact" class="hover:text-arch-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-xl" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center bg-arch-dark text-white pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920')] bg-cover bg-center opacity-25"></div>
+        <div class="max-w-7xl mx-auto px-6 py-20 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <span class="text-arch-accent uppercase tracking-widest text-sm font-semibold inline-block border-b-2 border-arch-accent pb-1">
+                    Architectural Engineer
+                </span>
+                <h1 class="text-5xl md:text-7xl font-light font-serif tracking-tight leading-none">
+                    Engineering Portfolio & <br><span class="font-bold italic text-arch-accent">Technical Blueprints</span>
+                </h1>
+                <p class="text-gray-400 max-w-xl text-sm md:text-base font-light leading-relaxed">
+                    Sana'a / KSA — 2026. Merging architectural visualization with robust structural execution data across 28 comprehensive deliverables.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-arch-accent hover:bg-white hover:text-arch-dark text-arch-dark px-8 py-4 text-xs font-bold uppercase tracking-widest transition duration-300">
+                        Explore Works Grid
+                    </a>
+                </div>
+            </div>
+            
+            <!-- KPI Counter Metric Section -->
+            <div class="lg:col-span-4 grid grid-cols-2 gap-4">
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">4+</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Years Design & Site Experience</div>
+                </div>
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">28</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Project Modules Indexed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile" class="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-4 sticky top-28">
+            <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold mb-2">01 / Profile</h2>
+            <h3 class="text-3xl font-serif font-bold tracking-tight">Design Integrity & Site Precision</h3>
+        </div>
+        <div class="lg:col-span-8 space-y-6 text-arch-slate font-light leading-relaxed text-base">
+            <p class="text-xl text-arch-dark font-medium font-serif italic">
+                "Bridging the gap between photorealistic 3D visualization and physical on-site construction."
+            </p>
+            <p>
+                Specialized in executing precise architectural planning inside <strong class="text-arch-dark">Autodesk Revit and 3ds Max</strong> while maintaining total engineering control over site lifecycles, quantity estimations, and execution frameworks.
+            </p>
+        </div>
+    </section>
+
+    <!-- SELECTED PROJECTS WORK SECTION -->
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-6">
+            <div>
+                <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold mb-2">02 / Selected Works</h2>
+                <h3 class="text-3xl font-serif font-bold tracking-tight">Interactive Project Portfolio</h3>
+            </div>
+            <!-- FILTER BUTTONS -->
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-wider font-semibold" id="filterContainer">
+                <button class="px-4 py-2 bg-arch-dark text-white rounded-xs transition duration-200 filter-btn" data-filter="all">All Architecture</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="residential">Residential</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="interior">Interior</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="mixed">Mixed-Use</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="others">Specialized</button>
+            </div>
+        </div>
+
+        <!-- PROJECTS DYNAMIC GRID CONTAINER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+            <!-- Project Cards generated dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL (OPTIMIZED FOR PDF VIEWING) -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 flex flex-col items-center justify-between p-4 backdrop-blur-sm transition-all duration-300">
+        <div class="w-full flex justify-between items-center text-white max-w-6xl border-b border-white/10 pb-4">
+            <div class="flex flex-col">
+                <h4 id="lightboxTitle" class="font-serif text-lg font-medium text-arch-accent">Document Viewer</h4>
+                <p id="lightboxLocation" class="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5"></p>
+            </div>
+            <button onclick="closeLightbox()" class="text-2xl text-gray-400 hover:text-white transition w-10 h-10 flex items-center justify-center rounded-full bg-white/5">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <div class="flex-1 w-full max-w-6xl my-4 relative bg-arch-muted rounded-sm shadow-2xl overflow-hidden border border-white/5" id="iframeContainer">
+            <iframe id="lightboxIframe" src="" class="w-full h-full bg-arch-muted" frameborder="0"></iframe>
+        </div>
+        
+        <div class="flex items-center gap-6 bg-arch-muted border border-white/10 px-8 py-4 rounded-full text-white text-xs tracking-widest uppercase font-semibold shadow-xl mb-2">
+            <button onclick="rotateDocument(-90)" class="flex items-center gap-2 hover:text-arch-accent transition group">
+                <i class="fa-solid fa-rotate-left text-arch-accent transition"></i> Rotate Left
+            </button>
+            <div class="w-px h-4 bg-white/20"></div>
+            <button onclick="resetDocumentRotation()" class="text-gray-400 hover:text-white transition text-[10px]">Reset</button>
+            <div class="w-px h-4 bg-white/20"></div>
+            <button onclick="rotateDocument(90)" class="flex items-center gap-2 hover:text-arch-accent transition group">
+                Rotate Right <i class="fa-solid fa-rotate-right text-arch-accent transition"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTACT FOOTER -->
+    <section id="contact" class="bg-arch-dark text-white py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
+            <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold">03 / Contact Channel</h2>
+            <h3 class="text-3xl font-serif">Eng. Ahmed Abdulellah Dahmash</h3>
+            <p class="text-gray-400 text-xs tracking-widest uppercase"><a href="mailto:ahmeddhmsh@gmail.com" class="hover:text-arch-accent transition">ahmeddhmsh@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- DYNAMIC PORTFOLIO DATA MATRIX (IMAGES + PDF PATHS) -->
+    <script>
+        // Dual-Asset Matrix Map: Every folder contains a preview 'img' and a technical 'pdf'
+        // Note: Make sure your files inside the folders are named image.jpg and file.pdf (or adjust below)
+        const projectCollection = [
+            { id: "01", name: "Modern Residential Villa I", year: "2025", type: "residential", location: "Riyadh, KSA", desc: "Comprehensive architectural design and exterior 3D visualization for a premium residential villa.", img: "project1/image.jpg", pdf: "project1/file.pdf" },
+            { id: "02", name: "Luxury Residential Villa II", year: "2025", type: "residential", location: "Riyadh, KSA", desc: "Advanced structural detailing, spatial allocation engineering, and modern neoclassical aesthetic formulation.", img: "project2/image.jpg", pdf: "project2/file.pdf" },
+            { id: "03", name: "Al-Malaki Furniture Showroom", year: "2026", type: "interior", location: "Sana'a, Yemen", desc: "High-end commercial interior design, detailed zoning, and premium material selection tailored for luxury retail.", img: "project3/image.jpg", pdf: "project3/file.pdf" },
+            { id: "04", name: "Ibrahim Villa Ceiling Design", year: "2026", type: "interior", location: "Sana'a, Yemen", desc: "Bespoke interior gypsum ceiling architecture incorporating integrated ambient lighting schemes.", img: "project4/image.jpg", pdf: "project4/file.pdf" },
+            { id: "05", name: "Ibn Sina Hospital Offices Interior", year: "2025", type: "interior", location: "Sana'a, Yemen", desc: "Healthcare-compliant administrative office interior styling, featuring ergonomic layout planning.", img: "project5/image.jpg", pdf: "project5/file.pdf" },
+            { id: "06", name: "Al-Sarh Al-Dhahabi Office Design", year: "2025", type: "interior", location: "Sana'a, Yemen", desc: "Premium corporate workspace modeling, executing wood-paneled accents and sophisticated spatial configurations.", img: "project6/image.jpg", pdf: "project6/file.pdf" },
+            { id: "07", name: "Design & Build Residential Villa", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "End-to-end architectural drafting and rigorous structural site execution supervision for a private stone facade villa.", img: "project7/image.jpg", pdf: "project7/file.pdf" },
+            { id: "08", name: "Mohamed Bin Saud Administrative Building", year: "2024", type: "mixed", location: "KSA", desc: "BIM-integrated administrative tower proposal, focusing on modern corporate elevations and multi-tier utility coordination.", img: "project8/image.jpg", pdf: "project8/file.pdf" },
+            { id: "09", name: "Twin Residential Villas Project", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Simultaneous construction management and supervision of adjacent corner villas from excavation up to final turn-key finishes.", img: "project9/image.jpg", pdf: "project9/file.pdf" },
+            { id: "10", name: "Commercial & Administrative Office Tower", year: "2022", type: "mixed", location: "Sana'a, Yemen", desc: "Multi-storey commercial development project optimizing functional circulation and incorporating high-efficiency modern structural systems.", img: "project10/image.jpg", pdf: "project10/file.pdf" },
+            { id: "11", name: "Bin Rasheed Residential Villa", year: "2025", type: "residential", location: "Riyadh, KSA", desc: "BIM modeling, structural quantity estimation, and multi-tier layout planning for Mr. Abdallah Bin Rasheed.", img: "project11/image.jpg", pdf: "project11/file.pdf" },
+            { id: "12", name: "Residential Building Facade Design", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Bespoke stone and glass exterior elevation development utilizing advanced 3ds Max texturing and rendering workflows.", img: "project12/image.jpg", pdf: "project12/file.pdf" },
+            { id: "13", name: "Sifr Street Mixed-Use Development", year: "2024", type: "mixed", location: "Sana'a, Yemen", desc: "Design and strict site execution management for a prominent multi-family commercial and residential tower on Sifr Street.", img: "project13/image.jpg", pdf: "project13/file.pdf" },
+            { id: "14", name: "Bin Farhan Commercial & Residential Building", year: "2025", type: "mixed", location: "Sana'a, Yemen", desc: "Complete architectural drafting and structural site supervision framework developed for private investor clients.", img: "project14/image.jpg", pdf: "project14/file.pdf" },
+            { id: "15", name: "Hadda Residential Complex", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Full site execution oversight for four residential blocks, tracking operations from excavation up to the basement slab casting phases.", img: "project15/image.jpg", pdf: "project15/file.pdf" },
+            { id: "16", name: "Mohamed Amer Mixed-Use Building", year: "2024", type: "mixed", location: "Sana'a, Yemen", desc: "Architectural package assembly and direct field engineering supervision for a multi-storey retail and housing block.", img: "project16/image.jpg", pdf: "project16/file.pdf" },
+            { id: "17", name: "Mahmoud Al-Ariqi Mixed-Use Building", year: "2025", type: "mixed", location: "Sana'a, Yemen", desc: "Turn-key design and execution framework management, applying material estimation constraints and QA/QC structural checks.", img: "project17/image.jpg", pdf: "project17/file.pdf" },
+            { id: "18", name: "Jibran Al-Makhrafi Villa Landscape", year: "2025", type: "others", location: "Sana'a, Yemen", desc: "Bespoke luxury villa landscape layout, detailing hardscape elements, green zoning configurations, and custom water features.", img: "project18/image.jpg", pdf: "project18/file.pdf" },
+            { id: "19", name: "Global Technology Hub (Graduation Project)", year: "2021", type: "others", location: "Sana'a, Yemen", desc: "An extensive academic milestone project focusing on high-tech sustainable architectural forms, complex structural modeling, and futuristic zoning layouts.", img: "project19/image.jpg", pdf: "project19/file.pdf" },
+            { id: "20", name: "Specialized Heart Hospital Project", year: "2022", type: "others", location: "Yemen", desc: "Advanced medical-grade spatial configuration, complex circulation routing, and mechanical/electrical integration layout for a specialized treatment center.", img: "project20/image.jpg", pdf: "project20/file.pdf" },
+            { id: "21", name: "Al-Hudaydah City Urban Masterplan", year: "2022", type: "others", location: "Al-Hudaydah, Yemen", desc: "Large-scale strategic civic zoning development, focusing on infrastructural distribution, transportation efficiency, and environmental resilience.", img: "project21/image.jpg", pdf: "project21/file.pdf" },
+            { id: "22", name: "48 Residential District Rehabilitation", year: "2023", type: "others", location: "Sana'a, Yemen", desc: "Civic engineering assessment and rehabilitation planning to modern standards, optimizing public safety networks and community layouts.", img: "project22/image.jpg", pdf: "project22/file.pdf" },
+            { id: "23", name: "Al-Hudaydah International Airport Design", year: "2023", type: "others", location: "Al-Hudaydah, Yemen", desc: "Mega-scale infrastructure modeling project detailing terminal aerodynamics, transit lounges, and high-efficiency logistic sub-structures.", img: "project23/image.jpg", pdf: "project23/file.pdf" },
+            { id: "24", name: "Arab Cultural Center", year: "2023", type: "others", location: "Sana'a, Yemen", desc: "Iconic civic design blending traditional Islamic patterns with contemporary fluid form architecture, featuring community theaters and exhibition wings.", img: "project24/image.jpg", pdf: "project24/file.pdf" },
+            { id: "25", name: "Contemporary Villa Facade Styling", year: "2024", type: "residential", location: "Sana'a, Yemen", desc: "Parametric cladding layouts and luxury exterior modeling using localized premium stone detailing combined with modern curtain walls.", img: "project25/image.jpg", pdf: "project25/file.pdf" },
+            { id: "26", name: "Modern Residential Villa III", year: "2024", type: "residential", location: "Sana'a, Yemen", desc: "BIM conceptual layout integration, structural drafting checkouts, and premium natural lighting optimization strategies.", img: "project26/image.jpg", pdf: "project26/file.pdf" },
+            { id: "27", name: "Modern Residential Villa IV", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Detailed open-plan internal circulation planning combined with a high-fidelity rendering sequence for premium presentation pitches.", img: "project27/image.jpg", pdf: "project27/file.pdf" },
+            { id: "28", name: "Sami Al-Kamim Residential Building", year: "2024", type: "residential", location: "Sana'a, Yemen", desc: "Complete multi-apartment engineering set design, finalizing facade selections, window-to-wall ratios, and precise quantities calculations.", img: "project28/image.jpg", pdf: "project28/file.pdf" }
+        ];
+
+        const grid = document.getElementById("projectsGrid");
+
+        // UI Injection Matrix displaying image previews and binding PDF launch actions
+        function renderProjects(filter = "all") {
+            grid.innerHTML = "";
+            const targets = filter === "all" ? projectCollection : projectCollection.filter(p => p.type === filter || (filter === "others" && ["landscape", "others"].includes(p.type)));
+            
+            targets.forEach(p => {
+                grid.innerHTML += `
+                    <div class="bg-white border border-gray-100 rounded-sm overflow-hidden relative group project-card transition duration-300 hover:shadow-2xl flex flex-col justify-between">
+                        <!-- Image Container with PDF Action Overlay -->
+                        <div class="h-56 relative cursor-pointer overflow-hidden bg-gray-100 border-b border-gray-100 group" onclick="openLightbox('${p.pdf}', '${p.name}', '${p.location}')">
+                            <!-- Project Image Render -->
+                            <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            
+                            <!-- Fallback layout if image is missing -->
+                            <div class="absolute inset-0 hidden flex-col items-center justify-center bg-arch-dark text-white space-y-2">
+                                <i class="fa-regular fa-image text-2xl text-gray-500"></i>
+                                <span class="text-[9px] uppercase tracking-wider text-gray-400">Render Preview</span>
+                            </div>
+
+                            <!-- Technical Indicator Badge -->
+                            <div class="absolute top-4 right-4 bg-red-600 text-white px-2 py-0.5 text-[8px] font-bold tracking-widest uppercase rounded-xs flex items-center gap-1 shadow-md z-10">
+                                <i class="fa-solid fa-file-pdf"></i> Tech PDF
+                            </div>
+                            
+                            <!-- Interactive Hover Overlay -->
+                            <div class="absolute inset-0 bg-arch-dark/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center p-4">
+                                <span class="bg-arch-accent text-arch-dark px-4 py-2 text-[10px] font-bold uppercase tracking-widest shadow-md">
+                                    <i class="fa-solid fa-expand mr-1"></i> Open Plans / PDF
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4 bg-arch-muted text-arch-accent px-2 py-0.5 text-[9px] font-bold tracking-widest uppercase border border-white/10 z-10">
+                                ID: ${p.id}
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+                            <div class="space-y-1">
+                                <span class="text-[9px] uppercase tracking-widest text-arch-accent font-bold block">${p.location} &bull; ${p.year}</span>
+                                <h4 class="text-base font-bold text-arch-dark font-serif tracking-tight line-clamp-1">${p.name}</h4>
+                                <p class="text-xs text-arch-slate font-light leading-relaxed line-clamp-2">${p.desc}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // --- Lightbox & PDF Frame Interaction Engine ---
+        let currentRotation = 0;
+        const modal = document.getElementById("lightboxModal");
+        const modalIframe = document.getElementById("lightboxIframe");
+        const iframeContainer = document.getElementById("iframeContainer");
+        const modalTitle = document.getElementById("lightboxTitle");
+        const modalLocation = document.getElementById("lightboxLocation");
+
+        function openLightbox(pdfUrl, title, location) {
+            currentRotation = 0; 
+            iframeContainer.style.transform = `rotate(${currentRotation}deg)`;
+            
+            modalIframe.src = pdfUrl;
+            modalTitle.innerText = title;
+            modalLocation.innerText = location;
+            
+            modal.classList.remove("hidden");
+            document.body.classList.add("overflow-hidden"); 
+        }
+
+        function closeLightbox() {
+            modal.classList.add("hidden");
+            modalIframe.src = ""; 
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        function rotateDocument(degrees) {
+            currentRotation += degrees;
+            iframeContainer.style.transform = `rotate(${currentRotation}deg)`;
+        }
+
+        function resetDocumentRotation() {
+            currentRotation = 0;
+            iframeContainer.style.transform = `rotate(${currentRotation}deg)`;
+        }
+
+        // Filter Controls
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                document.querySelectorAll(".filter-btn").forEach(b => {
+                    b.classList.remove("bg-arch-dark", "text-white");
+                    b.classList.add("bg-white", "text-arch-dark");
+                });
+                e.target.classList.remove("bg-white", "text-arch-dark");
+                e.target.classList.add("bg-arch-dark", "text-white");
+                renderProjects(e.target.getAttribute("data-filter"));
+            });
+        });
+
+        // Initialize Dynamic Grid
+        renderProjects();
+    </script>
+</body>
+</html>
